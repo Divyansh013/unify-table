@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sidebar.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar-container flex-column bg-color">
+        <div class="navbar-container-top flex-column align-justify-box">
+            <div class="navbar-container-top-logo align-justify-box flex">
+                <div>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="false" aria-label="UnifyApps" class="shrink-0 h-8 w-auto shrink-0">
+                        <title>UnifyApps</title>
+                        <path
+                            d="M16.5399 26.1583C15.89 25.7084 15.2951 25.1435 14.7902 24.5036C18.4546 23.3438 21.1191 19.9095 21.1191 15.8652V8.19655C21.1191 7.74163 21.2191 7.31671 21.3941 6.92678C20.8891 6.40187 20.5292 5.74699 20.3642 5.01212C19.6494 5.87697 19.2194 6.98677 19.2194 8.19655V15.8652C19.2194 19.2296 16.8899 22.0591 13.7554 22.8189C13.2805 21.7941 13.0106 20.6643 13.0106 19.5045V8.19655C13.0106 5.43704 10.766 3.19244 8.00645 3.19244C5.24694 3.19244 3.00234 5.43704 3.00234 8.19655V9.77127H4.902V8.19655C4.902 6.48686 6.29675 5.09211 8.00645 5.09211C9.71614 5.09211 11.1109 6.48686 11.1109 8.19655V19.5045C11.1109 20.7243 11.3459 21.9141 11.7658 23.0139C8.59634 22.8839 5.96181 20.6843 5.15696 17.7348H3.19731C4.06215 21.8341 7.7065 24.9186 12.0557 24.9186C12.2757 24.9186 12.4956 24.9086 12.7156 24.8936C13.6754 26.3833 15.0052 27.5981 16.5349 28.3629V26.1583H16.5399Z"
+                            fill="#383838"></path>
+                        <path
+                            d="M28.1777 5.1369C27.9927 5.86177 27.6128 6.50666 27.0929 7.01157C27.2428 7.3765 27.3278 7.77643 27.3278 8.19136V19.4993C27.3278 21.8689 26.188 24.1135 24.5033 25.5932V27.9678C27.2678 26.2581 29.2275 23.0287 29.2275 19.4993V8.19636C29.2275 7.04656 28.8326 5.98675 28.1777 5.1369Z"
+                            fill="#383838"></path>
+                        <path
+                            d="M24.2888 6.28244C25.4706 6.28244 26.4288 5.32433 26.4288 4.14244C26.4288 2.96055 25.4706 2.00244 24.2888 2.00244C23.1069 2.00244 22.1488 2.96055 22.1488 4.14244C22.1488 5.32433 23.1069 6.28244 24.2888 6.28244Z"
+                            fill="#12D965"></path>
+                        <path
+                            d="M22.6643 28.7626V26.2926L20.5243 25.0526L18.3793 26.2926V28.7626L20.5243 30.0026L22.6643 28.7626Z"
+                            fill="#FC7878"></path>
+                        <path d="M5.94734 11.7804H2.00234V15.7254H5.94734V11.7804Z" fill="#705AF8"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="navbar-container-top-icons flex-column">
+                <!-- <nav> -->
+                <div class=" navbar-container-top-icon align-justify-box flex-column">
+                    <div>
+                        <a class="nav-link">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" aria-hidden="false" width="100%"
+                                height="100%" aria-label="Projects"
+                                class="shrink-0 size-5 ua-side-nav-item-active-false shrink-0">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 9.5 2 12l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 12l-5-2.5m-10 5L2 17l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 17l-5-2.5M2 7l9.642-4.821c.131-.066.197-.098.266-.111a.5.5 0 0 1 .184 0c.069.013.135.045.266.11L22 7l-9.642 4.821c-.131.066-.197.099-.266.111a.501.501 0 0 1-.184 0c-.069-.012-.135-.045-.266-.11L2 7Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class=" navbar-container-top-icon align-justify-box flex-column">
+                    <div>
+                        <a class="nav-link">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" aria-hidden="false" width="100%"
+                                height="100%" aria-label="Projects"
+                                class="shrink-0 size-5 ua-side-nav-item-active-false shrink-0">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 9.5 2 12l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 12l-5-2.5m-10 5L2 17l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 17l-5-2.5M2 7l9.642-4.821c.131-.066.197-.098.266-.111a.5.5 0 0 1 .184 0c.069.013.135.045.266.11L22 7l-9.642 4.821c-.131.066-.197.099-.266.111a.501.501 0 0 1-.184 0c-.069-.012-.135-.045-.266-.11L2 7Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class=" navbar-container-top-icon align-justify-box flex-column">
+                    <div>
+                        <a class="nav-link">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" aria-hidden="false" width="100%"
+                                height="100%" aria-label="Projects"
+                                class="shrink-0 size-5 ua-side-nav-item-active-false shrink-0">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 9.5 2 12l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 12l-5-2.5m-10 5L2 17l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 17l-5-2.5M2 7l9.642-4.821c.131-.066.197-.098.266-.111a.5.5 0 0 1 .184 0c.069.013.135.045.266.11L22 7l-9.642 4.821c-.131.066-.197.099-.266.111a.501.501 0 0 1-.184 0c-.069-.012-.135-.045-.266-.11L2 7Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class=" navbar-container-top-icon align-justify-box flex-column">
+                    <div>
+                        <a class="nav-link">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" aria-hidden="false" width="100%"
+                                height="100%" aria-label="Projects"
+                                class="shrink-0 size-5 ua-side-nav-item-active-false shrink-0">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 9.5 2 12l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 12l-5-2.5m-10 5L2 17l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 17l-5-2.5M2 7l9.642-4.821c.131-.066.197-.098.266-.111a.5.5 0 0 1 .184 0c.069.013.135.045.266.11L22 7l-9.642 4.821c-.131.066-.197.099-.266.111a.501.501 0 0 1-.184 0c-.069-.012-.135-.045-.266-.11L2 7Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class=" navbar-container-top-icon align-justify-box flex-column">
+                    <div>
+                        <a class="nav-link">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" aria-hidden="false" width="100%"
+                                height="100%" aria-label="Projects"
+                                class="shrink-0 size-5 ua-side-nav-item-active-false shrink-0">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 9.5 2 12l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 12l-5-2.5m-10 5L2 17l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 17l-5-2.5M2 7l9.642-4.821c.131-.066.197-.098.266-.111a.5.5 0 0 1 .184 0c.069.013.135.045.266.11L22 7l-9.642 4.821c-.131.066-.197.099-.266.111a.501.501 0 0 1-.184 0c-.069-.012-.135-.045-.266-.11L2 7Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class=" navbar-container-top-icon align-justify-box flex-column">
+                    <div>
+                        <a class="nav-link">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" aria-hidden="false" width="100%"
+                                height="100%" aria-label="Projects"
+                                class="shrink-0 size-5 ua-side-nav-item-active-false shrink-0">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 9.5 2 12l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 12l-5-2.5m-10 5L2 17l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 17l-5-2.5M2 7l9.642-4.821c.131-.066.197-.098.266-.111a.5.5 0 0 1 .184 0c.069.013.135.045.266.11L22 7l-9.642 4.821c-.131.066-.197.099-.266.111a.501.501 0 0 1-.184 0c-.069-.012-.135-.045-.266-.11L2 7Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class=" navbar-container-top-icon align-justify-box flex-column">
+                    <div>
+                        <a class="nav-link">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" aria-hidden="false" width="100%"
+                                height="100%" aria-label="Projects"
+                                class="shrink-0 size-5 ua-side-nav-item-active-false shrink-0">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 9.5 2 12l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 12l-5-2.5m-10 5L2 17l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 17l-5-2.5M2 7l9.642-4.821c.131-.066.197-.098.266-.111a.5.5 0 0 1 .184 0c.069.013.135.045.266.11L22 7l-9.642 4.821c-.131.066-.197.099-.266.111a.501.501 0 0 1-.184 0c-.069-.012-.135-.045-.266-.11L2 7Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class=" navbar-container-top-icon align-justify-box flex-column">
+                    <div>
+                        <a class="nav-link">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" aria-hidden="false" width="100%"
+                                height="100%" aria-label="Projects"
+                                class="shrink-0 size-5 ua-side-nav-item-active-false shrink-0">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 9.5 2 12l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 12l-5-2.5m-10 5L2 17l9.642 4.821c.131.066.197.099.266.111.06.012.123.012.184 0 .069-.012.135-.045.266-.11L22 17l-5-2.5M2 7l9.642-4.821c.131-.066.197-.098.266-.111a.5.5 0 0 1 .184 0c.069.013.135.045.266.11L22 7l-9.642 4.821c-.131.066-.197.099-.266.111a.501.501 0 0 1-.184 0c-.069-.012-.135-.045-.266-.11L2 7Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-container-bottom flex-column align-justify-box ">
+            <div class="settings flex align-justify-box">
+                <a>
+                    <img height="22px" width="22px" src="../../settings-gear-icon.png" alt="settings" />
+                </a>
+            </div>
+            <div class="name-logo flex align-justify-box">
+                <div class="name-logo-initial flex align-justify-box btn-bg-color">B</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

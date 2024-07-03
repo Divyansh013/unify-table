@@ -24,15 +24,6 @@
 .align-justify-box-space {
   justify-content: space-between;
 }
-.svg-icon {
-  height: 23px;
-  width: 23px;
-  color: grey;
-}
-.nav-link {
-  text-decoration: none;
-  cursor: pointer;
-}
 
 table th {
   height: 22px;
@@ -47,9 +38,8 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
 }
-.row-justify-only {
-  justify-content: center;
-}
+
+
 .row-align-only {
   align-items: center;
 }
@@ -59,16 +49,6 @@ body {
   height: 100vh;
 }
 
-.navbar-container {
-  width: 3.3rem;
-  justify-content: space-between;
-}
-
-.navbar-container-top-logo {
-  width: 3.3rem;
-  height: 56px;
-}
-
 .content-container {
   width: 100%;
 }
@@ -76,36 +56,11 @@ body {
 .empty {
   width: 1.3rem;
 }
-.navbar-container-top-icon {
-  width: 3.3rem;
-  height: 36px;
-}
-.navbar-container-top-icons {
-  margin-top: 10px;
-  gap: 12px;
-}
-.navbar-container-bottom {
-  width: 3.3rem;
-  gap: 14px;
-}
-.navbar-container-bottom > div {
-  width: 3.3rem;
-}
-.name-logo {
-  height: 67px;
-  width: 3.3rem;
-  border-top: 1px solid grey;
-}
+
 .settings {
   height: 30px;
 }
-.name-logo-initial {
-  padding: 10px;
-  padding-left: 14px;
-  padding-right: 14px;
-  color: white;
-  border-radius: 50%;
-}
+
 .content-container1 {
   width: calc(100%-4.6rem);
   padding: 19px;
@@ -156,6 +111,7 @@ body {
   border-radius: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
+  letter-spacing: 0rem;
 }
 .automation {
   background-color: #4e26db;
@@ -165,6 +121,7 @@ body {
   padding-right: 12px;
   padding-top: 8px;
   padding-bottom: 8px;
+  letter-spacing: 0rem;
 }
 .automation-heading {
   font-size: 1.2rem;
