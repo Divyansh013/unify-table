@@ -25,13 +25,7 @@
   justify-content: space-between;
 }
 
-table th {
-  height: 22px;
-  text-align: left;
-  color: #475467;
-  font-size: 0.875rem;
-  font-weight: 300;
-}
+
 
 body {
   box-sizing: border-box;
