@@ -2,17 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
-.flex {
-  display: flex;
-}
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-.btn-bg-color {
-  background-color: rgb(78, 38, 219);
-}
 
 .bg-color {
   background-color: rgb(237, 239, 244);
@@ -25,35 +15,10 @@
   justify-content: space-between;
 }
 
-
-
-body {
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-}
-
-
 .row-align-only {
   align-items: center;
 }
 
-.container {
-  width: 100%;
-  height: 100vh;
-}
-
-.content-container {
-  width: 100%;
-}
-
-.empty {
-  width: 1.3rem;
-}
-
-.settings {
-  height: 30px;
-}
 
 .content-container1 {
   width: calc(100%-4.6rem);
@@ -85,17 +50,10 @@ body {
   border: 1px solid #e0e3eb;
   color: rgb(52, 64, 84);
 }
-.btn-container {
-  gap: 8px;
-  font-size: 0.875rem;
-  letter-spacing: 0.1rem;
-}
 .btns{
   gap:2px;
 }
-.font-semibold {
-  font-weight: 400;
-}
+
 .explore {
   background-color: white;
   color: #4e26db;
