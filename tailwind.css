@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply font-inter m-0 box-border;
+    }
+  th {
+    @apply h-[43px] text-left text-[#475467] text-sm font-light tracking-[0.2px] border-0.1 border-gray-200;
+  }
+  td{
+    @apply h-[43px] border-0.1 border-gray-200;
+  }
+  table tr td:nth-child(1),
+  table tr th:nth-child(1) {
+    @apply w-[53px] pl-2 pr-2 pt-1.5 pb-1.5;
+  }
+  table tr td:nth-child(2),
+  table tr th:nth-child(2) {
+    @apply w-[283px] pl-2 pr-2 pt-1.5 pb-1.5;
+  }
+  table tr td:nth-child(3),
+  table tr th:nth-child(3) {
+    @apply w-[133px] pl-2 pr-2 pt-1.5 pb-1.5;
+  }
+  table tr td:nth-child(4),
+  table tr th:nth-child(4) {
+    @apply w-[223px] pl-2 pr-2 pt-1.5 pb-1.5;
+  }
+  table tr td:nth-child(5),
+  table tr th:nth-child(5) {
+    @apply w-[163px] pl-2 pr-2 pt-1.5 pb-1.5;
+  }
+  table tr td:nth-child(6),
+  table tr th:nth-child(6) {
+    @apply w-[223px] pl-2 pr-2 pt-1.5 pb-1.5;
+  }
+  table tr td:nth-child(7),
+  table tr th:nth-child(7) {
+    @apply w-[223px] pl-2 pr-2 pt-1.5 pb-1.5;
+  }
+  table tr td:nth-child(8),
+  table tr th:nth-child(8) {
+    @apply w-[23px] pl-2 pr-2 pt-1.5 pb-1.5;
+  }
+  table tr td:nth-child(9),
+  table tr th:nth-child(9) {
+    @apply w-[42px] pl-2 pr-2 pt-1.5 pb-1.5;
+  }
+  table tbody tr td:nth-child(2) {
+    @apply text-sm text-primary font-normal;
+  }
+  td img{
+    @apply p-[5px] border border-[#e0e3eb];
+  }
+}
