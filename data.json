@@ -1,0 +1,174 @@
+[
+  {
+            "automation_name": "divyannshtest",
+            "trigger": "Schedule",
+            "applications": ["gmail.png","slack.png"],
+            "created_by": {
+            "name": "Divyansh",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+            
+        },
+        {
+            "automation_name": "yoworking",
+            "trigger": "Schedule",
+            "applications": ["gmail.png"],
+            "created_by": {
+            "name": "Random",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+        },
+        {
+            "automation_name": "yesactually",
+            "trigger": "Schedule",
+            "applications": ["gmail.png","slack.png"],
+            "created_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Divyansh",
+            "time": "07/05/2024 17:25"
+            }
+        },
+        {
+            "automation_name": "Untitled",
+            "trigger": "Callable",
+            "applications": ["slack.png"],
+           "created_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+        },
+        {
+            "automation_name": "rohan",
+            "trigger": "Application",
+            "applications": ["gmail.png"],
+            "created_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+        },
+        {
+            "automation_name": "xyz",
+            "trigger": "Application",
+            "applications": ["gmail.png","slack.png"],
+            "created_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+        },
+        {
+            "automation_name": "gfh",
+            "trigger": "Schedule",
+            "applications": ["gmail.png","slack.png"],
+            "created_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+        },
+        {
+            "automation_name": "send invite",
+            "trigger": "Callable",
+            "applications": ["gmail.png","slack.png"],
+            "project": "SS",
+            "created_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+        },
+        {
+            "automation_name": "hgjkl",
+            "trigger": "Schedule",
+            "applications": ["gmail.png","slack.png"],
+            "created_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+        },
+        {
+            "automation_name": "vbnm",
+            "trigger": "Schedule",
+            "applications": ["gmail.png","slack.png"],
+            "created_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+        },
+        {
+            "automation_name": "SavePhoneNumber",
+            "trigger": "Callable",
+            "applications": ["gmail.png","slack.png"],
+            "created_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+        },
+        {
+            "automation_name": "Untitled",
+            "trigger": "Application",
+            "applications": ["gmail.png","slack.png"],
+            "created_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+        },
+        {
+            "automation_name": "gvfhbjkn",
+            "trigger": "Schedule",
+            "applications": ["gmail.png","slack.png"],
+            "created_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            },
+            "last_modified_by": {
+            "name": "Unifyapps Admin",
+            "time": "07/05/2024 17:25"
+            }
+        }
+        
+]
