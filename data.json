@@ -8,7 +8,7 @@
             "time": "07/05/2024 17:25"
             },
             "last_modified_by": {
-            "name": "Unifyapps Admin",
+            "name": "New user",
             "time": "07/05/2024 17:25"
             }
             
@@ -22,7 +22,7 @@
             "time": "07/05/2024 17:25"
             },
             "last_modified_by": {
-            "name": "Unifyapps Admin",
+            "name": "Previous user",
             "time": "07/05/2024 17:25"
             }
         },
@@ -31,7 +31,7 @@
             "trigger": "Schedule",
             "applications": ["gmail.png","slack.png"],
             "created_by": {
-            "name": "Unifyapps Admin",
+            "name": "Shivam",
             "time": "07/05/2024 17:25"
             },
             "last_modified_by": {
@@ -44,11 +44,11 @@
             "trigger": "Callable",
             "applications": ["slack.png"],
            "created_by": {
-            "name": "Unifyapps Admin",
+            "name": "Abhishek",
             "time": "07/05/2024 17:25"
             },
             "last_modified_by": {
-            "name": "Unifyapps Admin",
+            "name": "Superadmin",
             "time": "07/05/2024 17:25"
             }
         },
@@ -57,11 +57,11 @@
             "trigger": "Application",
             "applications": ["gmail.png"],
             "created_by": {
-            "name": "Unifyapps Admin",
+            "name": "Harshal",
             "time": "07/05/2024 17:25"
             },
             "last_modified_by": {
-            "name": "Unifyapps Admin",
+            "name": "Unknown",
             "time": "07/05/2024 17:25"
             }
         },
@@ -70,11 +70,11 @@
             "trigger": "Application",
             "applications": ["gmail.png","slack.png"],
             "created_by": {
-            "name": "Unifyapps Admin",
+            "name": "Orz",
             "time": "07/05/2024 17:25"
             },
             "last_modified_by": {
-            "name": "Unifyapps Admin",
+            "name": "Ritik",
             "time": "07/05/2024 17:25"
             }
         },
@@ -83,11 +83,11 @@
             "trigger": "Schedule",
             "applications": ["gmail.png","slack.png"],
             "created_by": {
-            "name": "Unifyapps Admin",
+            "name": "Guess",
             "time": "07/05/2024 17:25"
             },
             "last_modified_by": {
-            "name": "Unifyapps Admin",
+            "name": "Root",
             "time": "07/05/2024 17:25"
             }
         },
@@ -97,11 +97,11 @@
             "applications": ["gmail.png","slack.png"],
             "project": "SS",
             "created_by": {
-            "name": "Unifyapps Admin",
+            "name": "Krypto",
             "time": "07/05/2024 17:25"
             },
             "last_modified_by": {
-            "name": "Unifyapps Admin",
+            "name": "Kane",
             "time": "07/05/2024 17:25"
             }
         },
@@ -114,7 +114,7 @@
             "time": "07/05/2024 17:25"
             },
             "last_modified_by": {
-            "name": "Unifyapps Admin",
+            "name": "Smith",
             "time": "07/05/2024 17:25"
             }
         },
@@ -127,7 +127,7 @@
             "time": "07/05/2024 17:25"
             },
             "last_modified_by": {
-            "name": "Unifyapps Admin",
+            "name": "VK",
             "time": "07/05/2024 17:25"
             }
         },
