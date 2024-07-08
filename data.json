@@ -1,6 +1,6 @@
 [
   {
-            "automation_name": "divyannshtest",
+            "automation_name": "tone",
             "trigger": "Schedule",
             "applications": ["gmail.png","slack.png"],
             "created_by": {

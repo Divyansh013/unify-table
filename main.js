@@ -1,18 +1,18 @@
 function loadTemplate(elementId, templatePath) {
-    fetch(templatePath)
-        .then(response => response.text())
-        .then(template => {
-            const compiledTemplate = Handlebars.compile(template);
-            document.getElementById(elementId).innerHTML = compiledTemplate();
-        })
-        .catch(error => console.error('Error loading template:', error));
+  fetch(templatePath)
+      .then(response => response.text())
+      .then(template => {
+          const compiledTemplate = Handlebars.compile(template);
+          document.getElementById(elementId).innerHTML = compiledTemplate();
+      })
+      .catch(error => console.error('Error loading template:', error));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadTemplate('sidebar', 'components/sidebar/sidebar.hbs');
-    loadTemplate('header', 'components/header/header.hbs');
-    loadTemplate('navbar', 'components/navbar/navbar.hbs');
-    loadTemplate('table', 'components/table/table.hbs');
+  loadTemplate('sidebar', 'components/sidebar/sidebar.hbs');
+  loadTemplate('header', 'components/header/header.hbs');
+  loadTemplate('navbar', 'components/navbar/navbar.hbs');
+  loadTemplate('table', 'components/table/table.hbs');
 });
 
 
@@ -21,58 +21,60 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(response => response.json())
     .then(jsonData => {
       const table = document.getElementById('data-table');
-      table.querySelectorAll('tr').forEach((row, rowIndex) => {
-        if (rowIndex >= jsonData.length) return; 
-        const data = jsonData[rowIndex];
-        const cells = row.querySelectorAll('td');
-        cells[1].querySelector('div').textContent = data.automation_name;
-        cells[2].querySelector('div>span').textContent = data.trigger;
-
-        const images = cells[3].querySelector('.imgcontainer');
-        images.innerHTML = '';
-
-        data.applications.forEach(application => {
-          const img = document.createElement('img');
-          img.src = application;
-          img.width = 30;
-          img.height = 30;
-          img.alt = `${application} icon`;
-          img.classList.add('application-icon');
-          images.appendChild(img);
+      function populateTable(data) {
+        const rows = table.querySelectorAll('tr');
+        rows.forEach((row, index) => {
+          if (index >= 0) {
+            row.style.display = 'none';
+          }
         });
+        data.forEach((item, index) => {
+          const row = rows[index]; 
+          if (row) {
+            const cells = row.querySelectorAll('td');
+            cells[1].querySelector('div').textContent = item.automation_name;
+            cells[2].querySelector('div>span').textContent = item.trigger;
 
-        cells[5].querySelector('.flex .flex-col > div:nth-child(1)').textContent = data.created_by.name;
-        cells[5].querySelector('.flex .flex-col > div:nth-child(2)').textContent = data.created_by.time;
-        cells[6].querySelector('.flex .flex-col > div:nth-child(1)').textContent = data.last_modified_by.name;
-        cells[6].querySelector('.flex .flex-col > div:nth-child(2)').textContent = data.last_modified_by.time;
+            const images = cells[3].querySelector('.imgcontainer');
+            images.innerHTML = '';
+            item.applications.forEach(application => {
+              const img = document.createElement('img');
+              img.src = application;
+              img.width = 30;
+              img.height = 30;
+              img.alt = `${application} icon`;
+              img.classList.add('application-icon');
+              images.appendChild(img);
+            });
+
+            cells[5].querySelector('.flex .flex-col > div:nth-child(1)').textContent = item.created_by.name;
+            cells[5].querySelector('.flex .flex-col > div:nth-child(2)').textContent = item.created_by.time;
+            cells[6].querySelector('.flex .flex-col > div:nth-child(1)').textContent = item.last_modified_by.name;
+            cells[6].querySelector('.flex .flex-col > div:nth-child(2)').textContent = item.last_modified_by.time;
+
+            row.style.display = ''; 
+          } else {
+            console.error('Not enough rows in the table to display all data.');
+          }
+        });
+      }
+      populateTable(jsonData);
+
+      const fuse = new Fuse(jsonData, {
+        keys: ['automation_name'],
+        minMatchCharLength: 1,
+        threshold: 0.5 
       });
 
       const searchInput = document.querySelector('.search-input');
 
       searchInput.addEventListener('input', () => {
         const query = searchInput.value.toLowerCase();
-        const rows = table.querySelectorAll('tr');
+        const results = query ? fuse.search(query) : jsonData.map(item => ({ item }));
 
-        rows.forEach((row, rowIndex) => {
-          if (rowIndex >= jsonData.length) return; 
+        const matchedData = results.map(result => result.item);
 
-          const cellText = jsonData[rowIndex].automation_name.toLowerCase();
-          const creatorName = jsonData[rowIndex].created_by.name.toLowerCase();
-          console.log(creatorName);
-          const modifier = jsonData[rowIndex].last_modified_by.name.toLowerCase();
-
-          if (cellText.includes(query) ) {
-            row.style.display = ''; 
-          }
-          else if(creatorName.includes(query)){
-            row.style.display = ''; 
-          }
-          else if(modifier.includes(query)){
-            row.style.display = ''; 
-          } else {
-            row.style.display = 'none'; 
-          }
-        });
+        populateTable(matchedData);
       });
     })
     .catch(error => console.error('Error loading JSON:', error));
